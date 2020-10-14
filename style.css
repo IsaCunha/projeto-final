@@ -1,0 +1,88 @@
+* {
+    margin: 10px;
+    padding: 0px;
+}
+
+body {  
+    
+    background-image:url("photo-1533113354171-490d836238e3.jpg");
+    background-position: center;
+    background-size: cover;
+           
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; 
+    margin: 100px auto;
+    width:100%;
+    max-width: 1000px;
+    border: 2px #F4F1DE;
+
+    text-align: justify;
+    line-height: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 10px 20px;
+}
+
+@media(max-width: 768px) {
+    .conteudo {
+    display: flex;
+    }
+}
+.conteudo h1 {
+    color: rgb(115, 190, 115);
+    font-size: 42px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 50px;
+    
+}
+
+.conteudo h2 {
+    color: darkseagreen;
+    font-size: 22px;
+    
+}
+
+.conteudo h3 {
+    color: rgb(252, 221, 226);
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 15px;
+    
+}
+
+.conteudo img {  
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;  
+    
+}
+
+@media (max-width: 768px) {
+    .conteudo img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        margin: 0;
+    }
+}
+
+
+.redesSociais img {
+    display: -ms-inline-grid;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    opacity: 0.9;
+}
